@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .tab > input[type="radio"]{
+            display: none;
+        }
+        .tabcontent{
+            display: none;
+            width: 100%;
+        }
+        #tab-btn-1:checked~#London,
+        #tab-btn-2:checked~#Paris,
+        #tab-btn-3:checked~#Tokyo{
+            display: block;
+        }
+        .tab>input[type="radio"]:checked+label{
+            color:white;
+            background-color: black;
+        }
+    </style>
+
+    <div class="tab">
+    <input checked id="tab-btn-1" name="tabbtn" type="radio" value="">
+    <label for="tab-btn-1">Вкладка 1</label>
+    <input id="tab-btn-2" name="tabbtn" type="radio" value="">
+    <label for="tab-btn-2">Вкладка 2</label>
+    <input id="tab-btn-3" name="tabbtn" type="radio" value="">
+    <label for="tab-btn-3">Вкладка 3</label>
+        <div id="London" class="tabcontent">
+            <h3>London</h3>
+            <p>London is the capital of Great Britain</p>
+        </div>
+        <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of Franch</p>
+        </div>
+        <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan</p>
+        </div>
+    </div>
+</body>
