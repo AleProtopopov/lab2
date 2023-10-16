@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
     <style>
+        body{
         .tab > input[type="radio"]{
             display: none;
         }
@@ -23,8 +23,10 @@
             color:white;
             background-color: black;
         }
+        }
     </style>
-
+</head>
+<body>
     <div class="tab">
     <input checked id="tab-btn-1" name="tabbtn" type="radio" value="">
     <label for="tab-btn-1">Вкладка 1</label>
@@ -37,12 +39,12 @@
             <p>London is the capital of Great Britain</p>
         </div>
         <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of Franch</p>
+            <h3 style="float: left; position: absolute; top: 5px;">Paris</h3>
+            <p style="color: blueviolet;">Paris is the capital of Franch</p>
         </div>
         <div id="Tokyo" class="tabcontent">
             <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan</p>
+            <p id ="Tokyo2">Tokyo is the capital of Japan</p>
         </div>
     </div>
 </body>
