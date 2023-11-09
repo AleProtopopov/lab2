@@ -6,23 +6,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body{
-        .tab > input[type="radio"]{
+       
+        .tab>input[type="radio"]{
             display: none;
         }
         .tabcontent{
             display: none;
-            width: 100%;
         }
         #tab-btn-1:checked~#London,
         #tab-btn-2:checked~#Paris,
         #tab-btn-3:checked~#Tokyo{
-            display: block;
+            display: inline;
         }
         .tab>input[type="radio"]:checked+label{
             color:white;
             background-color: black;
         }
+        #Paris{
+            float: right;
+            color: blueviolet; 
+            position: relative;
+            left:-700px;
         }
     </style>
 </head>
@@ -39,12 +43,12 @@
             <p>London is the capital of Great Britain</p>
         </div>
         <div id="Paris" class="tabcontent">
-            <h3 style="float: left; position: absolute; top: 5px;">Paris</h3>
-            <p style="color: blueviolet;">Paris is the capital of Franch</p>
+            <h3>Paris</h3>
+            <p>Paris is the capital of Franch</p>
         </div>
         <div id="Tokyo" class="tabcontent">
             <h3>Tokyo</h3>
-            <p id ="Tokyo2">Tokyo is the capital of Japan</p>
+            <p>Tokyo is the capital of Japan</p>
         </div>
     </div>
 </body>
